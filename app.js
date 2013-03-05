@@ -12,7 +12,8 @@
       if (_.isEmpty(this.terms()))
         return;
 
-      if (this.text().search(this.termsRegExp()) > 0){
+      console.log(this.text().search(this.termsRegExp()));
+      if (this.text().search(this.termsRegExp()) >= 0){
         this.termFound();
       } else {
         this.termNotFound();
@@ -34,6 +35,8 @@
       this.notified = false;
 
       this.enableSave();
+
+      this.switchTo('empty');
     },
 
     terms: _.memoize(function(){
