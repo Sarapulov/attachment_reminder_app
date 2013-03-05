@@ -26,6 +26,8 @@
         this.notified = true;
       }
 
+      services.appsTray().show();
+
       this.disableSave();
 
       this.switchTo('alert');
