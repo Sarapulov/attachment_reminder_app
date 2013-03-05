@@ -1,0 +1,7 @@
+<div class="alert">
+  <p>
+    <strong>{{t "alert.title"}}</strong> {{t "alert.body"}}
+  </p>
+  <br/>
+  <a class="btn btn-inverse dismiss">{{t "alert.dismiss"}}</a>
+</div>

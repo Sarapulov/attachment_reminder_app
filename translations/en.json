@@ -1,0 +1,20 @@
+{
+  "app": {
+    "description":  "Use condition non comment submission",
+    "name":         "Conditional Comment",
+
+    "parameters": {
+      "terms": {
+        "label": "Terms",
+        "helpText": "Words separated by commas."
+      }
+    }
+  },
+
+  "alert": {
+    "notification": "Have you thought to attach a file?",
+    "title": "Warning!",
+    "body": "Have you thought to attach a file?",
+    "dismiss": "Everything is fine"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "name": "conditional comment",
+  "author": {
+    "name": "Pierre Nespo",
+    "email": "pierre.nespo@gmail.com"
+  },
+  "parameters": [
+    {
+      "name": "terms",
+      "type": "multiline"
+    }
+  ],
+  "defaultLocale": "en",
+  "private": true,
+  "location": "ticket_sidebar",
+  "frameworkVersion": "0.5"
+}
