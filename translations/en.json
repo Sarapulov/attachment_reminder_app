@@ -1,7 +1,7 @@
 {
   "app": {
-    "description":  "Use condition non comment submission",
-    "name":         "Conditional Comment",
+    "description":  "Remind agents to attach file.",
+    "name":         "Attachment reminder app",
 
     "parameters": {
       "terms": {
