@@ -11,7 +11,7 @@
     }
   ],
   "defaultLocale": "en",
-  "private": false,
+  "private": true,
   "location": "ticket_sidebar",
   "frameworkVersion": "0.5"
 }
