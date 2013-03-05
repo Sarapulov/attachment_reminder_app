@@ -1,20 +1,20 @@
 {
   "app": {
     "description":  "Remind agents to attach file.",
-    "name":         "Attachment reminder app",
+    "name":         "Attachment Reminder App",
 
     "parameters": {
       "terms": {
         "label": "Terms",
-        "helpText": "Words separated by commas."
+        "helpText": "Please provide the terms you want the App to trigger its warning on separated by commas."
       }
     }
   },
 
   "alert": {
-    "notification": "Have you thought to attach a file?",
-    "title": "Warning!",
-    "body": "Have you thought to attach a file?",
-    "dismiss": "Everything is fine"
+    "notification": "Did you remember to attach your file ?",
+    "title": "Hello !",
+    "body": "You mentioned an attachment, did you remember to add it to your comment ?",
+    "dismiss": "Yes I did, let me proceed !"
   }
 }

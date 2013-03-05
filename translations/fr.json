@@ -1,0 +1,20 @@
+{
+  "app": {
+    "description":  "Rappeler à vos agents de ne plus oublier les pièces jointes !",
+    "name":         "Attachment Reminder App",
+
+    "parameters": {
+      "terms": {
+        "label": "Mots-clés",
+        "helpText": "Merci de rentrer dans ce champ les mots pour lesquels vous souhaitez prévenir vos agents de ne pas oublier leur pièce jointe (séparés par une virgule)."
+      }
+    }
+  },
+
+  "alert": {
+    "notification": "Avez vous oublié votre pièce jointe ?",
+    "title": "Bonjour !",
+    "body": "Vous avez mentioné une pièce-jointe, l'avez vous bien ajoutée à votre commentaire ?",
+    "dismiss": "Tout à fait, je souhaite continuer!"
+  }
+}
