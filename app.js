@@ -5,37 +5,30 @@
 
     events: {
       'comment.text.changed': 'textChanged',
-      'click a.dismiss'     : 'termNotFound'
+      'click a.dismiss'     : 'dismiss'
     },
 
     textChanged: function(){
-      if (_.isEmpty(this.terms()))
+      if (_.isEmpty(this.terms()) || this.notified)
         return;
 
-      console.log(this.text().search(this.termsRegExp()));
-      if (this.text().search(this.termsRegExp()) >= 0){
-        this.termFound();
-      } else {
-        this.termNotFound();
-      }
+      if (this.text().search(this.termsRegExp()) >= 0)
+        return this.termFound();
     },
 
     termFound: function(){
-      if(!this.notified){
-        services.notify(this.I18n.t('alert.notification'), "alert");
-        this.notified = true;
-      }
+      services.notify(this.I18n.t('alert.notification'), "alert");
 
       services.appsTray().show();
 
       this.disableSave();
 
       this.switchTo('alert');
+
+      this.notified = true;
     },
 
-    termNotFound: function(){
-      this.notified = false;
-
+    dismiss: function(){
       this.enableSave();
 
       this.switchTo('empty');
