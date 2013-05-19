@@ -8,13 +8,13 @@
       'click a.dismiss'     : 'dismiss'
     },
 
-    textChanged: function(){
+    textChanged: _.debounce(function(){
       if (_.isEmpty(this.terms()) || this.notified)
         return;
 
       if (this.text().search(this.termsRegExp()) >= 0)
         return this.termFound();
-    },
+    }, 500),
 
     termFound: function(){
       services.notify(this.I18n.t('alert.notification'), "alert");
