@@ -5,3 +5,5 @@ Attachment Reminder will block the submit button and warn you when given terms/k
 ## Settings
 
 * **Terms:** Comma separated terms ex: `attachment,attach,file`.
+
+By downloading this app, you are agreeing to our [terms and conditions](https://github.com/zendesklabs/wiki/wiki/Terms-and-Conditions)
